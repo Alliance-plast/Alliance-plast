@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.content {
+.container {
     background: #000000;
     display: flex;
     flex-direction: column;
@@ -13,6 +13,12 @@
     justify-content: center;
     height: 100vh;
     width: 100%;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 ul li a {
     position: relative;
@@ -36,4 +42,7 @@ ul li a::before {
 ul li a:hover::before {
     width: 100%;
     filter: drop-shadow(0 0 50px var(--clr));
+}
+img {
+    width: 150px;
 }

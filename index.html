@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alliance Plast</title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  </body>
   </head>
   <body>
-    <div class="content">
-      <ul class="content">
+    <div class="container">
+      <ul>
         <li style="--clr: #ff0000">
           <a href="#" data-text="&nbsp;Alliance&nbsp;">
             &nbsp;Alliance&nbsp;
@@ -20,5 +22,8 @@
         </li>
       </ul>
     </div>
-  </body>
+    <script>
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
+    </script>
 </html>
