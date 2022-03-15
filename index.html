@@ -1,29 +1,568 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <title>Alliance Plast</title>
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/simplegrid.css" />
+    <link rel="stylesheet" href="./css/icomoon.css" />
+    <link rel="stylesheet" href="./css/lightcase.css" />
     <link rel="stylesheet" href="./style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-  </body>
+
+    <style> @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&family=Source+Sans+Pro:wght@500;600&display=swap'); </style>
+
   </head>
+  
   <body>
-    <div class="container">
-      <ul>
-        <li style="--clr: #ff0000">
-          <a href="#" data-text="&nbsp;Alliance&nbsp;">
-            &nbsp;Alliance&nbsp;
-          </a>
-        </li>
-        <li style="--clr: #fff">
-          <a href="#" data-text="&nbsp;Plast&nbsp;"> &nbsp;Plast&nbsp; </a>
-        </li>
-      </ul>
+    <header id="top-header" class="header-home header-default">
+      <div class="grid">
+        <div class="col-1-1">
+          <div class="content">
+            <div class="logo-wrap">
+              <a href="#home" class="logo">Alliance Plast</a>
+            </div>
+            <nav class="navigation">
+              <ul class="nav-container">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#work">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="parallax-section parallax1" id="home">
+      <div class="grid grid-pad">
+        <div class="col-1-1">
+          <div class="content content-header">
+            <h2>Welcome to ALLIANCE PLAST</h2>
+            <p>
+              We dispense products made using high grade raw materials to
+              ensure best quality delivered to our clients. We have always
+              aimed at acquiring cent percent client contentment which has
+              been fulfilled with our conformity with industrial quality
+              standards & prices.
+            </p>
+            <a class="btn btn-ghost" href="#services">Find Out More</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <script>
-        var scene = document.getElementById('scene');
-        var parallaxInstance = new Parallax(scene);
-    </script>
+
+    <!-- CurveUp -->
+    <svg
+      class="curveUpColor"
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+      width="100%"
+      height="100"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <path d="M0 100 C 20 0 50 0 100 100 Z"></path>
+    </svg>
+
+    <div class="wrap services-wrap" id="services">
+      <section class="grid grid-pad services">
+        <h2>Our Services</h2>
+        <div class="col-1-3 service-box service-2">
+          <div class="content">
+            <div class="service-icon">
+              <i class="circle-icon icon-star"></i>
+            </div>
+            <div class="service-entry">
+              <h3>High Grade Quality</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-3 service-box service-3">
+          <div class="content">
+            <div class="service-icon">
+              <i class="circle-icon icon-wallet"></i>
+            </div>
+            <div class="service-entry">
+              <h3>Pocket Friendly</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-3 service-box service-4">
+          <div class="content">
+            <div class="service-icon">
+              <i class="circle-icon icon-user3"></i>
+            </div>
+            <div class="service-entry">
+              <h3>Customer Satisfaction</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- CurveDown -->
+    <svg
+      class="curveDownColor"
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+      width="100%"
+      height="100"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <path d="M0 0 C 50 100 80 100 100 0 Z"></path>
+    </svg>
+
+    <div class="wrap grey recent-wrap" id="work">
+      <section class="grid grid-pad">
+        <h2>Our Products</h2>
+        <div class="col-1-1 mix">
+          <ul class="filters">
+            <li class="filter active" data-filter="all">All</li>
+            <li class="filter" data-filter=".illustration">Personal Protection</li>
+            <li class="filter" data-filter=".web-design">Industrial Uniform</li>
+            <li class="filter" data-filter=".photography">Fire Safety</li>
+          </ul>
+        </div>
+        <!-- End of Filter section -->
+        <div class="portfolio-items">
+          <div class="col-1-3 mix illustration">
+            <div class="content">
+              <div class="recent-work">
+                <img src="images/work/construct.png" alt="" />
+                <div class="overlay">
+                  <h2>
+                    <a
+                      class="img-wrap"
+                      title="Jacket & Helmet"
+                      href="./images/work/construct.png"
+                      >Jacket & Helmet</a>
+                    
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-3 mix photography">
+            <div class="content">
+              <div class="recent-work">
+                <img src="./images/work//Welding.jpg" alt="" />
+                <div class="overlay">
+                  <h2>
+                    <a
+                      class="img-wrap"
+                      data-rel="lightcase:photography"
+                      title="Blue flowers - Photography"
+                      href="./images/work//Welding.jpg"
+                      >Welding Glass & Gloves</a
+                    >
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-3 mix web-design">
+            <div class="content">
+              <div class="recent-work">
+                <img src="images/work/guard.jpg" alt="" />
+                <div class="overlay">
+                  <h2>
+                    <a
+                      class="img-wrap"
+                      data-rel="lightcase:webdesign"
+                      title="Minimal nature - Web Design"
+                      href="images/work/guard.jpg"
+                      >Security Guard Uniform</a
+                    >
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-3 mix photography">
+            <div class="content">
+              <div class="recent-work">
+                <img src="images/work/Shoes.jpg" alt="" />
+                <div class="overlay">
+                  <h2>
+                    <a
+                    class="img-wrap"
+                    data-rel="lightcase:photography"
+                    title="Big city and dreams - Photography"
+                    href="images/work/Shoes.jpg"
+                    >Safety Shoes</a
+                    >
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-3 mix illustration">
+            <div class="content">
+              <div class="recent-work">
+                <img src="images/work/corporate.png" alt="" />
+                <div class="overlay">
+                  <h2>
+                    <a
+                      class="img-wrap"
+                      data-rel="lightcase:illustration"
+                      title="Batman Wannabe - Illustration"
+                      href="images/work/corporate.png"
+                      > Corporate Uniform </a>
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-3 mix web-design">
+            <div class="content">
+              <div class="recent-work">
+                <img src="images/work/nurse.jpg" alt="" />
+                <div class="overlay">
+                  <h2>
+                    <a
+                      class="img-wrap"
+                      data-rel="lightcase:illustration"
+                      title="Jack the sailor - Illustration"
+                      href="images/work/nurse.jpg"
+                      >Nurse Uniform</a>
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-3 mix photography">
+            <div class="content">
+              <div class="recent-work">
+                <img src="images/work/doctor.jpg" alt="" />
+                <div class="overlay">
+                  <h2>
+                    <a
+                      class="img-wrap"
+                      data-rel="lightcase:photography"
+                      title="Enjoy live - Photography"
+                      href="images/work/doctor.jpg"
+                      >Doctor Uniform</a
+                    >
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-3 mix illustration">
+            <div class="content">
+              <div class="recent-work">
+                <img src="images/work/lady.jpg" alt="" />
+                <div class="overlay">
+                  <h2>
+                    <a
+                      class="img-wrap"
+                      data-rel="lightcase:illustration"
+                      title="Run kitty run - Photography"
+                      href="images/work/lady.jpg"
+                      >Ladies Worker Uniform</a
+                    >
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-3 mix illustration">
+            <div class="content">
+              <div class="recent-work">
+                <img src="images/work/chef.jpg" alt="" />
+                <div class="overlay">
+                  <h2>
+                    <a
+                      class="img-wrap"
+                      data-rel="lightcase:webdesign"
+                      title="Would you? - Web Design"
+                      href="images/work/chef.jpg"
+                      >Chef Uniform</a
+                    >
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-3 mix illustration">
+            <div class="content">
+              <div class="recent-work">
+                <img src="images/work/chef.jpg" alt="" />
+                <div class="overlay">
+                  <h2>
+                    <a
+                      class="img-wrap"
+                      data-rel="lightcase:webdesign"
+                      title="Would you? - Web Design"
+                      href="images/work/chef.jpg"
+                      >Chef Uniform</a
+                    >
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-3 mix illustration">
+            <div class="content">
+              <div class="recent-work">
+                <img src="images/work/chef.jpg" alt="" />
+                <div class="overlay">
+                  <h2>
+                    <a
+                      class="img-wrap"
+                      data-rel="lightcase:webdesign"
+                      title="Would you? - Web Design"
+                      href="images/work/chef.jpg"
+                      >Chef Uniform</a
+                    >
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- CurveDown -->
+    <svg
+      class="curveDownColor2"
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+      width="100%"
+      height="100"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <path d="M0 0 C 50 100 80 100 100 0 Z"></path>
+    </svg>
+
+    <!-- Contact Section -->
+    <div class="wrap contact" id="contact">
+      <div class="grid grid-pad">
+        <h2>Contact</h2>
+        <div class="col-1-2">
+          <div class="content address">
+            <h3>Talk to us</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
+              iusto fugit esse soluta quae debitis quibusdam harum voluptatem,
+              maxime, aliquam sequi. Tempora ipsum magni unde velit corporis
+              fuga, necessitatibus blanditiis.
+            </p>
+            <address>
+              <div>
+                <div class="box-icon">
+                  <i class="icon-location"></i>
+                </div>
+                <span>Address:</span>
+                <p>9983 City name, Street name, 232 Apartment C</p>
+              </div>
+
+              <div>
+                <div class="box-icon">
+                  <i class="icon-clock"></i>
+                </div>
+                <span>Work Time:</span>
+                <p>Monday - Friday from 9am to 5pm</p>
+              </div>
+
+              <div>
+                <div class="box-icon">
+                  <i class="icon-phone"></i>
+                </div>
+                <span>Phone:</span>
+                <p>595 12 34 567</p>
+              </div>
+            </address>
+          </div>
+        </div>
+        <div class="col-1-2 pleft-25">
+          <div class="content contact-form">
+            <form class="form">
+              <input
+                type="text"
+                class="comment-name"
+                placeholder="Name*"
+                required
+              />
+              <input
+                type="email"
+                class="comment-email"
+                placeholder="Email*"
+                required
+              />
+              <input
+                type="text"
+                class="comment-subject"
+                placeholder="Subject"
+              />
+              <textarea
+                class="required comment-text"
+                placeholder="Message..."
+                required
+              ></textarea>
+              <input
+                type="submit"
+                value="Send Message"
+                class="btn submit comment-submit"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Contact Section -->
+
+    <!-- CurveDown -->
+    <svg
+      class="curveDownColor"
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+      width="100%"
+      height="100"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <path d="M0 0 C 50 100 80 100 100 0 Z"></path>
+    </svg>
+
+    <!-- Footer -->
+    <footer class="wrap">
+      <div class="grid grid-pad">
+        <div class="col-1-4">
+          <div class="content">
+            <div class="footer-widget">
+              <h3>About</h3>
+              <div class="textwidget">
+                <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore.
+                </p>
+                <br />
+                <p>Et dolore magna aliquyam erat sed diam voluptua.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-4">
+          <div class="content">
+            <div class="footer-widget">
+              <h3>Recent Posts</h3>
+              <div class="fwidget">
+                <ul>
+                  <li><a href="#0">Suspendisse nec lectus non</a></li>
+                  <li><a href="#0">Phasellus euismod pulvinar</a></li>
+                  <li><a href="#0">Aliquam erat volutpat</a></li>
+                  <li><a href="#0">Phasellus euismod pulvinar</a></li>
+                  <li><a href="#0">Aliquam erat volutpat</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-4">
+          <div class="content">
+            <div class="footer-widget">
+              <h3>More info</h3>
+              <div class="textwidget">
+                <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore.
+                </p>
+                <br />
+                <p>At vero eos et accusam et justo duo dolores et ea rebum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-4">
+          <div class="content">
+            <div class="footer-widget">
+              <h3>Flickr Feed</h3>
+              <div class="flickr-widget">
+                <ul class="flickr-list">
+                  <li>
+                    <a href="#0"
+                      ><img src="images/flickr-widget/flickr1.jpg" alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#0"
+                      ><img src="images/flickr-widget/flickr2.jpg" alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#0"
+                      ><img src="images/flickr-widget/flickr3.jpg" alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#0"
+                      ><img src="images/flickr-widget/flickr4.jpg" alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#0"
+                      ><img src="images/flickr-widget/flickr5.jpg" alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#0"
+                      ><img src="images/flickr-widget/flickr6.jpg" alt=""
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="social-footer">
+        <div class="grid grid-pad">
+          <div class="col-1-1">
+            <div class="content">
+              <div class="social-set">
+                <a href="#0"><i class="icon-facebook"></i></a>
+                <a href="#0"><i class="icon-twitter"></i></a>
+                <a href="#0"><i class="icon-linkedin2"></i></a>
+                <a href="#0"><i class="icon-dribbble4"></i></a>
+                <a href="#0"><i class="icon-instagram"></i></a>
+              </div>
+              <p class="source-org copyright">
+                © 2016 | All Rights Reserved Created By
+                <a href="http://templatestock.co">Template Stock</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div class="loader-overlay">
+      <div class="loader">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/mixitup.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/lightcase.min.js"></script>
+  </body>
 </html>
