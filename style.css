@@ -39,10 +39,3 @@ ul li a::before {
     border-right: 0 solid var(--clr);
     -webkit-text-stroke: 5px var(--clr);
 }
-ul li a:hover::before {
-    width: 100%;
-    filter: drop-shadow(0 0 50px var(--clr));
-}
-img {
-    width: 150px;
-}
